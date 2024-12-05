@@ -1,0 +1,22 @@
+/* 调整博客文章的内边距 */
+.blog-post.ios-card {
+    padding: 16px;  /* 减小内边距 */
+}
+
+.blog-post .post-header {
+    margin-bottom: 12px;  /* 减小标题区域的下边距 */
+}
+
+.blog-post .post-content {
+    margin-top: 12px;  /* 减小内容区域的上边距 */
+}
+
+.blog-post .section-block {
+    margin: 16px 0;  /* 减小段落间的间距 */
+}
+
+/* 确保内容区域的文字大小合适 */
+.blog-post .post-content p {
+    margin: 8px 0;  /* 减小段落间距 */
+    line-height: 1.6;  /* 适当的行高 */
+}

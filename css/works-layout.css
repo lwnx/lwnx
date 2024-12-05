@@ -1,0 +1,31 @@
+/* Works 部分的布局优化 */
+#works .project-overview.ios-card {
+    width: 100% !important;  /* 确保卡片占满容器宽度 */
+    max-width: none !important;  /* 移除最大宽度限制 */
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    box-sizing: border-box !important;
+}
+
+/* 确保容器也是全宽的 */
+#works .works-list {
+    width: 100% !important;
+    max-width: none !important;
+    padding: 0 !important;
+}
+
+/* 图片网格布局优化 */
+#works .image-grid,
+#works .image-gallery,
+#works .image-comparison {
+    width: 100% !important;
+    margin: 12px 0 !important;
+}
+
+/* 统计卡片布局优化 */
+#works .work-stats {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+    gap: 12px !important;
+}

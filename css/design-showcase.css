@@ -1,0 +1,220 @@
+/* 设计作品展示样式 */
+
+/* 大图展示 */
+.showcase-hero {
+    width: 100%;
+    margin: 24px 0;
+    position: relative;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.showcase-hero img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.showcase-hero .overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+}
+
+/* 双列图片布局 */
+.showcase-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+/* 三列图片布局 */
+.showcase-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin: 24px 0;
+}
+
+/* 不规则网格布局 */
+.showcase-grid-featured {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.grid-item-large {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+/* 设计细节展示 */
+.design-details {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0;
+    flex-wrap: wrap;
+}
+
+.detail-card {
+    flex: 1;
+    min-width: 250px;
+    background: var(--card-bg);
+    padding: 16px;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+}
+
+/* 设计过程展示 */
+.design-process {
+    margin: 32px 0;
+}
+
+.process-timeline {
+    position: relative;
+    padding-left: 32px;
+}
+
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background: var(--accent-color);
+}
+
+.process-item {
+    margin-bottom: 24px;
+    position: relative;
+}
+
+.process-item::before {
+    content: '';
+    position: absolute;
+    left: -36px;
+    top: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--accent-color);
+    border: 3px solid var(--bg-color);
+}
+
+/* 图片对比展示 */
+.image-comparison {
+    display: flex;
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.comparison-item {
+    flex: 1;
+    position: relative;
+}
+
+.comparison-label {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    padding: 4px 12px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border-radius: 16px;
+    font-size: 0.9em;
+}
+
+/* 设计规范展示 */
+.design-specs {
+    background: var(--card-bg);
+    border-radius: 12px;
+    padding: 20px;
+    margin: 24px 0;
+}
+
+.specs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 16px;
+    margin-top: 16px;
+}
+
+.spec-item {
+    padding: 16px;
+    background: var(--bg-color);
+    border-radius: 8px;
+}
+
+/* 交互原型展示 */
+.prototype-showcase {
+    display: flex;
+    gap: 24px;
+    margin: 24px 0;
+    flex-wrap: wrap;
+}
+
+.prototype-item {
+    flex: 1;
+    min-width: 280px;
+    position: relative;
+}
+
+.prototype-item video,
+.prototype-item img {
+    width: 100%;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .showcase-grid-2,
+    .showcase-grid-3,
+    .showcase-grid-featured {
+        grid-template-columns: 1fr;
+    }
+    
+    .grid-item-large {
+        grid-column: auto;
+        grid-row: auto;
+    }
+    
+    .image-comparison {
+        flex-direction: column;
+    }
+    
+    .design-details {
+        flex-direction: column;
+    }
+}
+
+/* 图片悬停效果 */
+.showcase-grid-2 img,
+.showcase-grid-3 img,
+.showcase-grid-featured img,
+.prototype-item img {
+    transition: transform 0.3s ease;
+}
+
+.showcase-grid-2 img:hover,
+.showcase-grid-3 img:hover,
+.showcase-grid-featured img:hover,
+.prototype-item img:hover {
+    transform: scale(1.02);
+}
+
+/* 图片说明文字样式 */
+.image-caption {
+    margin-top: 8px;
+    font-size: 0.9em;
+    color: var(--text-secondary);
+    text-align: center;
+}

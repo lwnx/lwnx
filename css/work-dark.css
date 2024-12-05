@@ -1,0 +1,90 @@
+/* Work section dark mode styles */
+:root[data-theme="dark"] {
+    --work-header-bg: #2c2c2e;
+    --work-text-primary: #ffffff;
+    --work-text-secondary: #ebebf599;
+    --work-card-bg: #1c1c1e;
+    --work-border-color: #38383a;
+    --work-highlight-bg: #2c2c2e;
+    --work-stats-bg: #2c2c2e;
+    --work-timeline-line: #38383a;
+    --work-timeline-dot: #64d2ff;
+    --work-image-caption: #ebebf599;
+}
+
+/* Work article dark mode enhancements */
+[data-theme="dark"] .blog-post[data-category="work"] {
+    background-color: var(--work-card-bg);
+    border-color: var(--work-border-color);
+}
+
+[data-theme="dark"] .blog-post[data-category="work"] .post-header {
+    background-color: var(--work-header-bg);
+}
+
+[data-theme="dark"] .blog-post[data-category="work"] h2,
+[data-theme="dark"] .blog-post[data-category="work"] h3,
+[data-theme="dark"] .blog-post[data-category="work"] h4 {
+    color: var(--work-text-primary);
+}
+
+[data-theme="dark"] .blog-post[data-category="work"] p,
+[data-theme="dark"] .blog-post[data-category="work"] li {
+    color: var(--work-text-secondary);
+}
+
+[data-theme="dark"] .blog-post[data-category="work"] .image-caption {
+    color: var(--work-image-caption);
+    background-color: var(--work-header-bg);
+}
+
+[data-theme="dark"] .blog-post[data-category="work"] .work-stats {
+    background-color: var(--work-stats-bg);
+}
+
+[data-theme="dark"] .blog-post[data-category="work"] .process-steps::before {
+    background-color: var(--work-timeline-line);
+}
+
+[data-theme="dark"] .blog-post[data-category="work"] .step-number {
+    background-color: var(--work-timeline-dot);
+    color: var(--work-card-bg);
+}
+
+/* Enhanced card styles for dark mode */
+[data-theme="dark"] .blog-post[data-category="work"] .ios-card {
+    background-color: var(--work-header-bg);
+    border-color: var(--work-border-color);
+}
+
+[data-theme="dark"] .blog-post[data-category="work"] .highlight {
+    background-color: var(--work-highlight-bg);
+    color: var(--work-text-primary);
+}
+
+/* Image gallery dark mode styles */
+[data-theme="dark"] .blog-post[data-category="work"] .image-gallery {
+    background-color: var(--work-card-bg);
+}
+
+[data-theme="dark"] .blog-post[data-category="work"] .gallery-caption {
+    background-color: var(--work-header-bg);
+    color: var(--work-text-secondary);
+}
+
+/* Solution cards dark mode styles */
+[data-theme="dark"] .blog-post[data-category="work"] .solution-card {
+    background-color: var(--work-header-bg);
+}
+
+/* Achievement cards dark mode styles */
+[data-theme="dark"] .blog-post[data-category="work"] .achievement-card {
+    background-color: var(--work-header-bg);
+}
+
+/* Hover effects */
+[data-theme="dark"] .blog-post[data-category="work"] .ios-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
+    transition: all 0.3s ease;
+}

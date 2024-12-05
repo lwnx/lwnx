@@ -1,0 +1,83 @@
+/* 项目概览卡片样式优化 */
+.project-overview.ios-card {
+    padding: 16px !important;
+}
+
+/* 图片网格间距优化 */
+.image-grid {
+    gap: 12px !important;
+    margin: 12px 0 !important;
+}
+
+.image-item {
+    margin-bottom: 8px !important;
+}
+
+.image-caption {
+    margin-top: 4px !important;
+    font-size: 0.9em !important;
+}
+
+/* 全宽图片间距 */
+.image-full {
+    margin: 16px 0 !important;
+}
+
+figcaption {
+    margin-top: 4px !important;
+    font-size: 0.9em !important;
+}
+
+/* 数据统计卡片间距 */
+.work-stats {
+    gap: 12px !important;
+    margin: 16px 0 !important;
+}
+
+.stat-card {
+    padding: 12px !important;
+}
+
+/* 设计过程步骤间距 */
+.process-steps {
+    margin: 16px 0 !important;
+}
+
+.process-step {
+    margin-bottom: 12px !important;
+    padding: 12px !important;
+}
+
+.step-content {
+    margin-left: 12px !important;
+}
+
+.step-content h4 {
+    margin: 0 0 4px 0 !important;
+}
+
+/* 改版对比和作品集展示间距 */
+.image-comparison, .image-gallery {
+    gap: 12px !important;
+    margin: 12px 0 !important;
+}
+
+.gallery-item {
+    margin-bottom: 8px !important;
+}
+
+.gallery-caption {
+    margin-top: 4px !important;
+    font-size: 0.9em !important;
+}
+
+/* 标题间距 */
+.project-overview h3 {
+    margin: 20px 0 12px !important;
+}
+
+/* 段落间距 */
+.project-overview p {
+    margin: 8px 0 !important;
+    line-height: 1.6 !important;
+}

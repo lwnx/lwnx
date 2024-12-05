@@ -1,0 +1,95 @@
+/* 文章间距样式 */
+.works-list {
+    padding: 2rem 0;
+}
+
+.works-list .blog-post {
+    margin-bottom: 4rem;  /* 增加文章之间的间距 */
+    padding: 2.5rem;      /* 增加文章内部的内边距 */
+    border-radius: 16px;  /* 圆角效果 */
+    transition: transform 0.3s ease;
+}
+
+.works-list .blog-post:last-child {
+    margin-bottom: 2rem;  /* 最后一篇文章底部保留适当间距 */
+}
+
+/* 文章内部元素间距 */
+.blog-post .post-header {
+    margin-bottom: 2rem;
+}
+
+.blog-post .post-category {
+    margin-bottom: 1rem;
+}
+
+.blog-post h2 {
+    margin: 1rem 0;
+}
+
+.blog-post .post-subtitle {
+    margin-bottom: 1.5rem;
+}
+
+.blog-post .post-meta {
+    margin-bottom: 2rem;
+}
+
+.blog-post .section-block {
+    margin: 3rem 0;
+}
+
+.blog-post .section-block:first-child {
+    margin-top: 2rem;
+}
+
+.blog-post .section-block:last-child {
+    margin-bottom: 2rem;
+}
+
+/* 响应式间距调整 */
+@media (max-width: 768px) {
+    .works-list .blog-post {
+        margin-bottom: 3rem;
+        padding: 1.5rem;
+    }
+    
+    .blog-post .section-block {
+        margin: 2rem 0;
+    }
+}
+
+/* 确保大于500px时单列显示 */
+@media (min-width: 501px) {
+    .works-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
+    }
+    
+    .works-list .blog-post {
+        width: 100%;
+        max-width: 800px;
+        margin-left: auto;
+        margin-right: auto;
+        box-sizing: border-box;
+        background: var(--card-bg);
+        border-radius: var(--border-radius);
+    }
+}
+
+/* 大屏幕响应式布局 */
+@media (min-width: 1000px) {
+    .works-list {
+        padding: 2rem 10%;  /* 在大屏幕下增加左右间距 */
+        max-width: 1400px;  /* 限制最大宽度 */
+        margin: 0 auto;     /* 居中显示 */
+    }
+    
+    .works-list .blog-post {
+        padding: 3rem;      /* 增加文章内部的内边距 */
+    }
+}

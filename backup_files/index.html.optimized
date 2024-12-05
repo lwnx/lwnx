@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/tag-filter.css">
+    <script src="title-animation.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="js/tag-filter.js" defer></script>
+    <style>
+        .works-list .blog-post {
+            margin-bottom: 40px;
+        }
+        .works-list .blog-post:last-child {
+            margin-bottom: 0;
+        }
+    </style>
+  </head>
+  <body>
+    <nav class="nav">
+        <div class="nav-content">
+            <div class="nav-links">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#works" class="nav-link">Works</a>
+                <a href="#blog" class="nav-link">Blog</a>
+            </div>
+            <div class="nav-controls">
+                <button id="theme-toggle" class="ios-button" aria-label="Switch Theme">
+                    <svg class="theme-icon" viewBox="0 0 24 24" width="18" height="18">
+                        <path class="moon" d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1-8.313-12.454z"/>
+                        <path class="sun" d="M12 3v2m0 16v2M3 12h2m16 0h2m-4.07-8.07l1.414 1.414M4.07 4.07l1.414 1.414M12.02 12.02l1.414 1.414M4.07 19.93l1.414-1.414"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <main>
+            <!-- About Section -->
+            <section id="about" class="page active ios-card">
+                <div class="profile-header">
+                    <h1 id="title-effect">Product Experience Designer</h1>
+                    <p class="profile-intro" id="intro-effect">我是Weylandx✨李炜楠，专注于用户体验与产品设计，
+                        在这里你可以看到关于我的更多信息💼
+                    </p>
+                </div>
+
+                <div class="experience-timeline">
+                    <!-- Experience items -->
+                    <div class="timeline-item ios-card">
+                        <div class="timeline-header">
+                            <h3>UtourTravel</h3>
+                            <span class="timeline-period">2024 - 现在</span>
+                        </div>
+                        <p>负责产品设计工作，同时开发个人感兴趣的设计、产品、研发工具</p>
+                    </div>
+
+                    <div class="timeline-item ios-card">
+                        <div class="timeline-header">
+                            <h3>INKE映客直播</h3>
+                            <span class="timeline-period">2022 - 2023</span>
+                        </div>
+                        <p>负责创新产品设计工作</p>
+                    </div>
+
+                    <div class="timeline-item ios-card">
+                        <div class="timeline-header">
+                            <h3>OPPO ColorOS</h3>
+                            <span class="timeline-period">2021 - 2022</span>
+                        </div>
+                        <ul class="experience-list">
+                            <li>负责 OPPO 影像业务的视觉设计工作</li>
+                            <li>建立相机视觉设计规范</li>
+                            <li>配合系统版本及影像功能迭代，产出高质量视觉设计方案</li>
+                            <li>跟进相机方案落地，收集用户反馈并持续优化体验</li>
+                        </ul>
+                    </div>
+
+                    <div class="timeline-item ios-card">
+                        <div class="timeline-header">
+                            <h3>荔枝 FM</h3>
+                            <span class="timeline-period">2016 - 2021</span>
+                        </div>
+                        <ul class="experience-list">
+                            <li>负责荔枝互动娱乐产品迭代设计工作</li>
+                            <li>主导设计方案输出与把控，确保设计质量</li>
+                            <li>推进产品、研发团队协作流程</li>
+                            <li>参与项目：荔枝FM、荔枝播客、PP约玩等创新项目</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skills-section ios-card">
+                    <h2>核心能力</h2>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <h4>体验设计</h4>
+                            <div class="skill-bar"><div class="skill-level" style="width: 95%"></div></div>
+                        </div>
+                        <!-- Add other skills as needed -->
+                    </div>
+                </div>
+            </section>
+
+            <!-- Works Section -->
+            <section id="works" class="page">
+                <div class="works-list">
+                    <!-- OPPO Work -->
+                    <article class="blog-post ios-card" data-category="work">
+                        <div class="post-header">
+                            <span class="post-category">Work</span>
+                            <h2>OPPO ColorOS相机设计</h2>
+                            <p class="post-subtitle">系统相机的视觉设计规范与实践</p>
+                            <div class="post-meta">
+                                <span class="post-date">2021 - 2022</span>
+                                <span class="post-role">视觉设计师</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="intro-block">
+                                <p>在OPPO期间，主要负责ColorOS影像业务的视觉设计工作，建立相机视觉设计规范，并参与系统级设计创新。</p>
+                            </div>
+                            <!-- Work content -->
+                        </div>
+                    </article>
+
+                    <!-- Lizhi FM Work -->
+                    <article class="blog-post ios-card" data-category="work">
+                        <div class="post-header">
+                            <span class="post-category">Work</span>
+                            <h2>荔枝FM产品设计实践</h2>
+                            <p class="post-subtitle">音频社交产品的设计思考与实践</p>
+                            <div class="post-meta">
+                                <span class="post-date">2016 - 2021</span>
+                                <span class="post-role">产品设计师</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <div class="intro-block">
+                                <p>在荔枝FM的5年工作经历中，参与了多个重要产品的设计工作，包括直播、FM频道和播客等核心业务。</p>
+                            </div>
+                            <!-- Work content -->
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Blog Section -->
+            <section id="blog" class="page">
+                <div class="blog-list">
+                    <!-- Design Thinking Articles -->
+                    <article class="blog-post ios-card" data-category="design-thinking">
+                        <div class="post-header">
+                            <span class="post-category">设计思考</span>
+                            <h2>2023用户体验设计思考</h2>
+                            <p class="post-subtitle">从问题发现到方案落地</p>
+                        </div>
+                        <div class="post-content">
+                            <div class="intro-block">
+                                <p class="highlight">作为设计师，我们不仅要解决问题，更要善于发现真正的问题。本文总结了2023年在用户体验设计领域的关键思考。</p>
+                            </div>
+                            <!-- Article content -->
+                        </div>
+                    </article>
+
+                    <!-- Design Notes -->
+                    <article class="blog-post ios-card" data-category="design-notes">
+                        <div class="post-header">
+                            <span class="post-category">设计笔记</span>
+                            <h2>24个设计细节</h2>
+                            <p class="post-subtitle">从视觉到心理的设计指南</p>
+                        </div>
+                        <div class="post-content">
+                            <div class="intro-block">
+                                <p class="highlight">这篇文章汇总了24个关键的设计细节，从视觉设计基础到用户心理学原理，帮助设计师创造更好的用户体验。</p>
+                            </div>
+                            <!-- Article content -->
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </main>
+    </div>
+    </body>
+</html>
